@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libwebserver.a  CMakeFiles/webserver.dir/webserver.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libwebserver.a

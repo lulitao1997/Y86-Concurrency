@@ -1,0 +1,35 @@
+  0x000: 30f5f2030000 | 	irmovl 1010, %ebp
+  0x006: 30f4e8030000 | 	irmovl 1000, %esp
+  0x00c: 8040000000   | 	call main
+  0x011: 00           | 	halt
+  0x012:              | fib:
+  0x012: a05f         | 	pushl %ebp
+  0x014: 2045         | 	rrmovl %esp, %ebp
+  0x016: 50150c000000 | 	mrmovl 12(%ebp), %ecx	
+  0x01c: 503508000000 | 	mrmovl 8(%ebp), %ebx	
+  0x022: 6031         | 	addl %ebx, %ecx
+  0x024: 6167         | 	subl %esi, %edi
+  0x026: 7339000000   | 	je end
+  0x02b: a03f         | 	pushl %ebx
+  0x02d: a01f         | 	pushl %ecx
+  0x02f: 8012000000   | 	call fib
+  0x034: 703b000000   | 	jmp wp
+  0x039:              | end:
+  0x039: 2010         | 	rrmovl %ecx, %eax
+  0x03b:              | wp:
+  0x03b: 2054         | 	rrmovl %ebp, %esp
+  0x03d: b05f         | 	popl %ebp
+  0x03f: 90           | 	ret
+  0x040:              | main:
+  0x040: a05f         | 	pushl %ebp
+  0x042: 2045         | 	rrmovl %esp, %ebp
+  0x044: 30f601000000 | 	irmovl 1, %esi
+  0x04a: a07f         | 	pushl %edi
+  0x04c: 30f701000000 | 	irmovl 1, %edi
+  0x052: a07f         | 	pushl %edi
+  0x054: a07f         | 	pushl %edi
+  0x056: 30f728000000 | 	irmovl 40, %edi		
+  0x05c: 8012000000   | 	call fib
+  0x061: 2054         | 	rrmovl %ebp, %esp
+  0x063: b05f         | 	popl %ebp
+  0x065: 90           | 	ret

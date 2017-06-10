@@ -1,0 +1,18 @@
+<html>
+<head>
+<script type="text/javascript" src="/jquery/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#b01").click(function(){
+  $('#myDiv').load('/jquery/test1.txt');
+  });
+});
+</script>
+</head>
+<body>
+
+<div id="myDiv"><h2>Change Text by Ajax</h2></div>
+<button id="b01" type="button">Change Text</button>
+
+</body>
+</html>

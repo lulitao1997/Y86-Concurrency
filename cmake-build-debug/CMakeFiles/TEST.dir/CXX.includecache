@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/luman6666sinacom/Documents/Y86-Conc/consts.h
+string
+-
+
+/Users/luman6666sinacom/Documents/Y86-Conc/map_io.h
+consts.h
+/Users/luman6666sinacom/Documents/Y86-Conc/consts.h
+map
+-
+string
+-
+sstream
+-
+
+/Users/luman6666sinacom/Documents/Y86-Conc/test.cpp
+string
+-
+sstream
+-
+iostream
+-
+map
+-
+map_io.h
+/Users/luman6666sinacom/Documents/Y86-Conc/map_io.h
+
