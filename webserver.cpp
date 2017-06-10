@@ -120,7 +120,7 @@ void serve_json(int fd, const char *json) {
     sprintf(buf, "HTTP/1.0 200 OK\r\n");
     sprintf(buf, "%sServer: Tiny Web Server\r\n", buf);
     sprintf(buf, "%sConnection: close\r\n", buf);
-    sprintf(buf, "%sContent-length: %d\r\n", buf, strlen(buf));
+    sprintf(buf, "%sContent-length: %d\r\n", buf, strlen(json));
     sprintf(buf, "%sContent-type: %s\r\n\r\n", buf, "application/json");
     sprintf(buf, "%s%s", buf, json);
     Rio_writen(fd, buf, strlen(buf));       //line:netp:servestatic:endserve

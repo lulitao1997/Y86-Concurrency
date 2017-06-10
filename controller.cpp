@@ -113,31 +113,30 @@ void webserver(int pt_n) {
         }
         sscanf(tmp_p, "%s %s %s", method, uri, version);
         cerr << "FUCK THERE" << endl;
-        if (strcasecmp(method, "POST") == 0) {
-            while (!ended) {
-                cerr << "receive POST!!" << endl;
-                before_wake_thread();
-                cerr << "begin to call proc threads" << endl;
-                w_lock.unlock(); /*this wake those echo threads*/
-                cerr << "unlocked!" << endl;
-                fin_lock.lock(); /*wait echo threads finish*/
-                cerr << "threads finished" << endl;
-                PIPE[clock_cnt].stat = PIPE[clock_cnt].W.stat;
-                /*get var from global map*/
-                /*write msg*/
-//                sleep(1);
-//                for (int i=1; i<10000000; i++) {}
-                cout << "==== CLOCK COUNT ====" << clock_cnt << endl;
-                PIPE[clock_cnt].Print(result);
-//                printf("%s\n", result);
-//                printf("\n");
-                serve_json(connfd, result);
-                ended = (PIPE[clock_cnt].stat != SAOK);
-
-                fin_cnt = start_cnt = 0;
+        if (strcasecmp(method, "GET") == 0) {
+            if (strcmp(uri, "/next") == 0) {
+                if (!ended) {
+                    cerr << "receive POST!!" << endl;
+                    before_wake_thread();
+                    cerr << "begin to call proc threads" << endl;
+                    w_lock.unlock(); /*this wake those echo threads*/
+                    cerr << "unlocked!" << endl;
+                    fin_lock.lock(); /*wait echo threads to finish*/
+                    cerr << "threads finished" << endl;
+                    PIPE[clock_cnt].stat = PIPE[clock_cnt].W.stat;
+                }
             }
-            clock_cnt = 0;
-            ended = false;
+            else if (strcmp(uri, "/prev") == 0) {
+                if (clock_cnt) clock_cnt--;
+            }
+            else if (strcmp(uri, "/reset") == 0) {
+                clock_cnt = 0;
+            }
+            cout << "==== CLOCK COUNT ====" << clock_cnt << endl;
+            PIPE[clock_cnt].Print(result);
+            serve_json(connfd, result);
+            ended = (PIPE[clock_cnt].stat != SAOK);
+            fin_cnt = start_cnt = 0;
         }
         else {
             doit(connfd, method, uri, version);
