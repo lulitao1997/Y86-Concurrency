@@ -17,10 +17,8 @@
     <list default="true" id="d592214b-7669-457f-bb64-6cf0663811e1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CONTROLLER" afterPath="$PROJECT_DIR$/CONTROLLER" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CONTROLLER.dir/controller.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CONTROLLER.dir/controller.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CONTROLLER.dir/webserver.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CONTROLLER.dir/webserver.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller.cpp" afterPath="$PROJECT_DIR$/controller.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webserver.cpp" afterPath="$PROJECT_DIR$/webserver.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,15 +34,45 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="controller.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="controller.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3425">
-              <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+            <state relative-caret-position="252">
+              <caret line="102" column="68" lean-forward="false" selection-start-line="102" selection-start-column="64" selection-end-line="102" selection-end-column="68" />
               <folding>
                 <element signature="e#62#80#0" expanded="true" />
-                <element signature="e#3949#5154#0" expanded="false" />
+                <element signature="e#4337#5542#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="echoserverp.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ICS/code/conc/echoserverp.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tsh.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../ICS/shlab-handout/tsh.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="463" column="11" lean-forward="true" selection-start-line="463" selection-start-column="11" selection-end-line="463" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__functional_base" pinned="false" current-in-tab="false">
+        <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/__functional_base">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="415" column="0" lean-forward="false" selection-start-line="415" selection-start-column="0" selection-end-line="415" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,8 +80,8 @@
       <file leaf-file-name="webserver.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webserver.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="122" column="27" lean-forward="false" selection-start-line="122" selection-start-column="27" selection-end-line="122" selection-end-column="27" />
+            <state relative-caret-position="4">
+              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -82,53 +110,9 @@
       <file leaf-file-name="pipe.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PIPE/pipe.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="59" column="23" lean-forward="false" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+            <state relative-caret-position="170">
+              <caret line="373" column="22" lean-forward="false" selection-start-line="373" selection-start-column="22" selection-end-line="373" selection-end-column="22" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PIPE/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#17#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Transfer.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PIPE/Transfer.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="38" column="45" lean-forward="false" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HardwareUnits.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PIPE/HardwareUnits.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="118" column="33" lean-forward="false" selection-start-line="118" selection-start-column="33" selection-end-line="118" selection-end-column="33" />
-              <folding>
-                <element signature="e#148#162#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -480,10 +464,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="CONTROLLER" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Y86_Conc" TARGET_NAME="CONTROLLER" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Y86_Conc" RUN_TARGET_NAME="CONTROLLER">
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="TEST" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Y86_Conc" TARGET_NAME="TEST" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Y86_Conc" RUN_TARGET_NAME="TEST">
       <envs />
       <method />
@@ -492,11 +472,15 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="false" name="CONTROLLER" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="PIPE/demo/asum.yo" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Y86_Conc" TARGET_NAME="CONTROLLER" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Y86_Conc" RUN_TARGET_NAME="CONTROLLER">
+      <envs />
+      <method />
+    </configuration>
     <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
-      <item index="1" class="java.lang.String" itemvalue="Application.CONTROLLER" />
-      <item index="2" class="java.lang.String" itemvalue="Application.TEST" />
-      <item index="3" class="java.lang.String" itemvalue="Application.PIPE" />
+      <item index="1" class="java.lang.String" itemvalue="Application.TEST" />
+      <item index="2" class="java.lang.String" itemvalue="Application.PIPE" />
+      <item index="3" class="java.lang.String" itemvalue="Application.CONTROLLER" />
     </list>
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -533,12 +517,20 @@
       <workItem from="1496848664351" duration="10308000" />
       <workItem from="1496926902654" duration="5879000" />
       <workItem from="1496987274580" duration="5429000" />
-      <workItem from="1497019089939" duration="34536000" />
+      <workItem from="1497019089939" duration="39669000" />
     </task>
+    <task id="LOCAL-00001" summary="finish next, prev, reset">
+      <created>1497114259186</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1497114259186</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63062000" />
+    <option name="totallyTimeSpent" value="68195000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -559,7 +551,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.50388694" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32951653" sideWeight="0.4975265" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.4975265" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24946997" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24946997" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -583,6 +575,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finish next, prev, reset" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish next, prev, reset" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="3" />
@@ -590,39 +586,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csapp.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11070">
-          <caret line="615" column="10" lean-forward="true" selection-start-line="615" selection-start-column="10" selection-end-line="615" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="45" column="15" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="15" />
-          <folding>
-            <element signature="e#62#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/cstring">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1800">
@@ -774,18 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/thread">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="346" column="4" lean-forward="false" selection-start-line="346" selection-start-column="4" selection-end-line="346" selection-end-column="4" />
-          <folding>
-            <element signature="e#7894#8085#0" expanded="false" />
-            <element signature="e#8180#8226#0" expanded="false" />
-            <element signature="e#9005#9052#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PIPE/HardwareUnists.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -905,7 +856,7 @@
         <state relative-caret-position="-2917">
           <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
           <folding>
-            <element signature="e#146#164#0" expanded="true" />
+            <element signature="e#146#164#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -954,14 +905,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PIPE/pipe.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="59" column="23" lean-forward="false" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PIPE/Pipe.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -986,22 +929,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PIPE/pipe.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="373" column="22" lean-forward="false" selection-start-line="373" selection-start-column="22" selection-end-line="373" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/thread">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2146">
+          <caret line="356" column="0" lean-forward="false" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webserver.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="122" column="27" lean-forward="false" selection-start-line="122" selection-start-column="27" selection-end-line="122" selection-end-column="27" />
+        <state relative-caret-position="4">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/__functional_base">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="415" column="0" lean-forward="false" selection-start-line="415" selection-start-column="0" selection-end-line="415" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3425">
-          <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+        <state relative-caret-position="252">
+          <caret line="102" column="68" lean-forward="false" selection-start-line="102" selection-start-column="64" selection-end-line="102" selection-end-column="68" />
           <folding>
             <element signature="e#62#80#0" expanded="true" />
-            <element signature="e#3949#5154#0" expanded="false" />
+            <element signature="e#4337#5542#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ICS/code/conc/echoserverp.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/sys/signal.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="106" column="8" lean-forward="false" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ICS/shlab-handout/tsh.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="463" column="11" lean-forward="true" selection-start-line="463" selection-start-column="11" selection-end-line="463" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>

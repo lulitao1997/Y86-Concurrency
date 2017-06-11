@@ -24,7 +24,7 @@ void webserver(int pt_n);
 /* Thread routine */
 void echoserver(int port_n);
 
-mutex mtx, w_lock, fin_lock;
+mutex mtx, f_lock, d_lock, e_lock, m_lock, w_lock, fin_lock;
 int fin_cnt = 0, start_cnt;
 
 map<string, string> var;
@@ -57,6 +57,10 @@ int main(int argc, char **argv)
     transfer(argv[1]);
     pipe_init("__ins_buf__");
     cerr << "write complete" << endl;
+    f_lock.lock();
+    d_lock.lock();
+    e_lock.lock();
+    m_lock.lock();
     w_lock.lock();
     fin_lock.lock();
 
@@ -119,6 +123,10 @@ void webserver(int pt_n) {
                     cerr << "receive POST!!" << endl;
                     before_wake_thread();
                     cerr << "begin to call proc threads" << endl;
+                    f_lock.unlock(); /*this wake those echo threads*/
+                    d_lock.unlock(); /*this wake those echo threads*/
+                    e_lock.unlock(); /*this wake those echo threads*/
+                    m_lock.unlock(); /*this wake those echo threads*/
                     w_lock.unlock(); /*this wake those echo threads*/
                     cerr << "unlocked!" << endl;
                     fin_lock.lock(); /*wait echo threads to finish*/
@@ -204,10 +212,8 @@ void before_wake_thread() {
 void proc_f() {
     while (1) {
         mtx.lock();
-        w_lock.lock();
         start_cnt++;
-        if (start_cnt < ECHONUM)
-            w_lock.unlock();
+        f_lock.lock();
         cerr << "PROCING F" << start_cnt << fin_cnt << endl;
         mtx.unlock();
 
@@ -225,10 +231,8 @@ void proc_f() {
 void proc_d() {
     while (1) {
         mtx.lock();
-        w_lock.lock();
         start_cnt++;
-        if (start_cnt < ECHONUM)
-            w_lock.unlock();
+        d_lock.lock();
         cerr << "PROCING D" << start_cnt << fin_cnt << endl;
         mtx.unlock();
 
@@ -246,10 +250,8 @@ void proc_d() {
 void proc_e() {
     while (1) {
         mtx.lock();
-        w_lock.lock();
         start_cnt++;
-        if (start_cnt < ECHONUM)
-            w_lock.unlock();
+        e_lock.lock();
         cerr << "PROCING E" << start_cnt << fin_cnt << endl;
         mtx.unlock();
 
@@ -267,10 +269,8 @@ void proc_e() {
 void proc_m() {
     while (1) {
         mtx.lock();
-        w_lock.lock();
         start_cnt++;
-        if (start_cnt < ECHONUM)
-            w_lock.unlock();
+        m_lock.lock();
         cerr << "PROCING M" << start_cnt << fin_cnt << endl;
         mtx.unlock();
 
@@ -288,10 +288,8 @@ void proc_m() {
 void proc_w() {
     while (1) {
         mtx.lock();
-        w_lock.lock();
         start_cnt++;
-        if (start_cnt < ECHONUM)
-            w_lock.unlock();
+        w_lock.lock();
         cerr << "PROCING W" << start_cnt << fin_cnt << endl;
         mtx.unlock();
 
