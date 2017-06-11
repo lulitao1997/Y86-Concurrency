@@ -80,6 +80,16 @@ int main(int argc, char **argv)
     w_t.join();
 }
 
+void web_process() {
+
+}
+
+map<string, pid_t> host2pid;
+
+pid_t create_process(const char *host) {
+
+}
+
 void webserver(int pt_n) {
 
     int listenfd, connfd;
@@ -211,9 +221,9 @@ void before_wake_thread() {
 
 void proc_f() {
     while (1) {
+        f_lock.lock();
         mtx.lock();
         start_cnt++;
-        f_lock.lock();
         cerr << "PROCING F" << start_cnt << fin_cnt << endl;
         mtx.unlock();
 
@@ -230,9 +240,9 @@ void proc_f() {
 }
 void proc_d() {
     while (1) {
+        d_lock.lock();
         mtx.lock();
         start_cnt++;
-        d_lock.lock();
         cerr << "PROCING D" << start_cnt << fin_cnt << endl;
         mtx.unlock();
 
@@ -249,9 +259,9 @@ void proc_d() {
 }
 void proc_e() {
     while (1) {
+        e_lock.lock();
         mtx.lock();
         start_cnt++;
-        e_lock.lock();
         cerr << "PROCING E" << start_cnt << fin_cnt << endl;
         mtx.unlock();
 
@@ -268,9 +278,9 @@ void proc_e() {
 }
 void proc_m() {
     while (1) {
+        m_lock.lock();
         mtx.lock();
         start_cnt++;
-        m_lock.lock();
         cerr << "PROCING M" << start_cnt << fin_cnt << endl;
         mtx.unlock();
 
@@ -287,9 +297,9 @@ void proc_m() {
 }
 void proc_w() {
     while (1) {
+        w_lock.lock();
         mtx.lock();
         start_cnt++;
-        w_lock.lock();
         cerr << "PROCING W" << start_cnt << fin_cnt << endl;
         mtx.unlock();
 

@@ -2,6 +2,7 @@
 #define PIPE_H
 #include <cstdio>
 #include <cstring>
+#include <fstream>
 #include <iostream>
 #include <algorithm>
 #include <set>

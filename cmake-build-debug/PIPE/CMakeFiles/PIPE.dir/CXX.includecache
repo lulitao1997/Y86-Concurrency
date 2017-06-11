@@ -59,6 +59,8 @@ cstdio
 -
 cstring
 -
+fstream
+-
 iostream
 -
 algorithm
