@@ -15,21 +15,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d592214b-7669-457f-bb64-6cf0663811e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/echo_request.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proc_threads.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CONTROLLER" afterPath="$PROJECT_DIR$/CONTROLLER" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PIPE/PIPE" afterPath="$PROJECT_DIR$/PIPE/PIPE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TEST" afterPath="$PROJECT_DIR$/TEST" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CONTROLLER.dir/PIPE/Pipe.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CONTROLLER.dir/PIPE/Pipe.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CONTROLLER.dir/controller.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CONTROLLER.dir/controller.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CONTROLLER.dir/webserver.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CONTROLLER.dir/webserver.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TEST.dir/test.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TEST.dir/test.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/PIPE/CMakeFiles/PIPE.dir/Pipe.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/PIPE/CMakeFiles/PIPE.dir/Pipe.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PIPE/Pipe.cpp" afterPath="$PROJECT_DIR$/PIPE/Pipe.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PIPE/pipe.h" afterPath="$PROJECT_DIR$/PIPE/pipe.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PIPE/main.cpp" afterPath="$PROJECT_DIR$/PIPE/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CONTROLLER.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CONTROLLER.dir/CXX.includecache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CONTROLLER.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CONTROLLER.dir/depend.internal" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CONTROLLER.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CONTROLLER.dir/depend.make" />
@@ -46,10 +38,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Y86_Conc.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/Y86_Conc.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller.cpp" afterPath="$PROJECT_DIR$/controller.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_client.cpp" afterPath="$PROJECT_DIR$/sample_client.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.cpp" afterPath="$PROJECT_DIR$/test.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webserver.cpp" afterPath="$PROJECT_DIR$/webserver.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -97,6 +85,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PIPE/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="webserver.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webserver.cpp">
           <provider selected="true" editor-type-id="text-editor">
@@ -107,7 +105,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controller.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="controller.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="206">
@@ -150,16 +148,6 @@
               <folding>
                 <element signature="e#1686#1698#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sample_client.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample_client.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="57" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -243,7 +231,6 @@
         <option value="$PROJECT_DIR$/PIPE/bin2ins.h" />
         <option value="$PROJECT_DIR$/PIPE/Transfer.cpp" />
         <option value="$PROJECT_DIR$/PIPE/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/PIPE/main.cpp" />
         <option value="$PROJECT_DIR$/__ins_buf__" />
         <option value="$PROJECT_DIR$/PIPE/HardwareUnits.h" />
         <option value="$PROJECT_DIR$/webserver.h" />
@@ -257,6 +244,7 @@
         <option value="$PROJECT_DIR$/PIPE/Pipe.cpp" />
         <option value="$PROJECT_DIR$/PIPE/pipe.h" />
         <option value="$PROJECT_DIR$/controller.cpp" />
+        <option value="$PROJECT_DIR$/PIPE/main.cpp" />
       </list>
     </option>
   </component>
@@ -606,7 +594,7 @@
       <workItem from="1496987274580" duration="5429000" />
       <workItem from="1497019089939" duration="60409000" />
       <workItem from="1497281141167" duration="10000" />
-      <workItem from="1497281340702" duration="1086000" />
+      <workItem from="1497281340702" duration="1140000" />
     </task>
     <task id="LOCAL-00001" summary="finish next, prev, reset">
       <created>1497114259186</created>
@@ -629,11 +617,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497181560116</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="multi client OK">
+      <created>1497282472006</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1497282472006</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90031000" />
+    <option name="totallyTimeSpent" value="90085000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -707,7 +702,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finish next, prev, reset" />
     <MESSAGE value="FIX the conc problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIX the conc problem" />
+    <MESSAGE value="multi client OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="multi client OK" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -934,13 +930,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PIPE/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ICS/code/conc/echoservert.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="485">
@@ -1054,14 +1043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PIPE/Pipe.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/proc_threads.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1087,6 +1068,22 @@
           <folding>
             <element signature="e#62#80#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PIPE/Pipe.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PIPE/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     }
 
     transfer(argv[1]);
-    pipe_init("__ins_buf__");
+    pipe_init("__ins_buf__", 0);
     while (!ended) {
         proc_one();
     }
