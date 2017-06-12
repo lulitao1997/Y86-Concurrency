@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/c++   -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/TEST.dir/test.cpp.o  -o ../TEST 
+/Library/Developer/CommandLineTools/usr/bin/c++   -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/TEST.dir/test.cpp.o CMakeFiles/TEST.dir/csapp.c.o CMakeFiles/TEST.dir/PIPE/Pipe.cpp.o CMakeFiles/TEST.dir/PIPE/Transfer.cpp.o CMakeFiles/TEST.dir/webserver.cpp.o  -o ../TEST -lpthread -lm 

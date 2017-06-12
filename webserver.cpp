@@ -4,6 +4,8 @@
 #include "webserver.h"
 
 static char LINE_BUF[MAXLINE];
+
+
 char *get_first_line(int fd) {
     rio_t rio;
     Rio_readinitb(&rio, fd);

@@ -155,6 +155,7 @@ PIPE/Pipe.o: PIPE/Pipe.cpp.o
 
 # target to build an object file
 PIPE/Pipe.cpp.o:
+	$(MAKE) -f CMakeFiles/TEST.dir/build.make CMakeFiles/TEST.dir/PIPE/Pipe.cpp.o
 	$(MAKE) -f CMakeFiles/CONTROLLER.dir/build.make CMakeFiles/CONTROLLER.dir/PIPE/Pipe.cpp.o
 .PHONY : PIPE/Pipe.cpp.o
 
@@ -164,6 +165,7 @@ PIPE/Pipe.i: PIPE/Pipe.cpp.i
 
 # target to preprocess a source file
 PIPE/Pipe.cpp.i:
+	$(MAKE) -f CMakeFiles/TEST.dir/build.make CMakeFiles/TEST.dir/PIPE/Pipe.cpp.i
 	$(MAKE) -f CMakeFiles/CONTROLLER.dir/build.make CMakeFiles/CONTROLLER.dir/PIPE/Pipe.cpp.i
 .PHONY : PIPE/Pipe.cpp.i
 
@@ -173,6 +175,7 @@ PIPE/Pipe.s: PIPE/Pipe.cpp.s
 
 # target to generate assembly for a file
 PIPE/Pipe.cpp.s:
+	$(MAKE) -f CMakeFiles/TEST.dir/build.make CMakeFiles/TEST.dir/PIPE/Pipe.cpp.s
 	$(MAKE) -f CMakeFiles/CONTROLLER.dir/build.make CMakeFiles/CONTROLLER.dir/PIPE/Pipe.cpp.s
 .PHONY : PIPE/Pipe.cpp.s
 
@@ -182,6 +185,7 @@ PIPE/Transfer.o: PIPE/Transfer.cpp.o
 
 # target to build an object file
 PIPE/Transfer.cpp.o:
+	$(MAKE) -f CMakeFiles/TEST.dir/build.make CMakeFiles/TEST.dir/PIPE/Transfer.cpp.o
 	$(MAKE) -f CMakeFiles/CONTROLLER.dir/build.make CMakeFiles/CONTROLLER.dir/PIPE/Transfer.cpp.o
 .PHONY : PIPE/Transfer.cpp.o
 
@@ -191,6 +195,7 @@ PIPE/Transfer.i: PIPE/Transfer.cpp.i
 
 # target to preprocess a source file
 PIPE/Transfer.cpp.i:
+	$(MAKE) -f CMakeFiles/TEST.dir/build.make CMakeFiles/TEST.dir/PIPE/Transfer.cpp.i
 	$(MAKE) -f CMakeFiles/CONTROLLER.dir/build.make CMakeFiles/CONTROLLER.dir/PIPE/Transfer.cpp.i
 .PHONY : PIPE/Transfer.cpp.i
 
@@ -200,6 +205,7 @@ PIPE/Transfer.s: PIPE/Transfer.cpp.s
 
 # target to generate assembly for a file
 PIPE/Transfer.cpp.s:
+	$(MAKE) -f CMakeFiles/TEST.dir/build.make CMakeFiles/TEST.dir/PIPE/Transfer.cpp.s
 	$(MAKE) -f CMakeFiles/CONTROLLER.dir/build.make CMakeFiles/CONTROLLER.dir/PIPE/Transfer.cpp.s
 .PHONY : PIPE/Transfer.cpp.s
 
@@ -236,6 +242,7 @@ csapp.o: csapp.c.o
 
 # target to build an object file
 csapp.c.o:
+	$(MAKE) -f CMakeFiles/TEST.dir/build.make CMakeFiles/TEST.dir/csapp.c.o
 	$(MAKE) -f CMakeFiles/CONTROLLER.dir/build.make CMakeFiles/CONTROLLER.dir/csapp.c.o
 .PHONY : csapp.c.o
 
@@ -245,6 +252,7 @@ csapp.i: csapp.c.i
 
 # target to preprocess a source file
 csapp.c.i:
+	$(MAKE) -f CMakeFiles/TEST.dir/build.make CMakeFiles/TEST.dir/csapp.c.i
 	$(MAKE) -f CMakeFiles/CONTROLLER.dir/build.make CMakeFiles/CONTROLLER.dir/csapp.c.i
 .PHONY : csapp.c.i
 
@@ -254,6 +262,7 @@ csapp.s: csapp.c.s
 
 # target to generate assembly for a file
 csapp.c.s:
+	$(MAKE) -f CMakeFiles/TEST.dir/build.make CMakeFiles/TEST.dir/csapp.c.s
 	$(MAKE) -f CMakeFiles/CONTROLLER.dir/build.make CMakeFiles/CONTROLLER.dir/csapp.c.s
 .PHONY : csapp.c.s
 
@@ -290,6 +299,7 @@ webserver.o: webserver.cpp.o
 
 # target to build an object file
 webserver.cpp.o:
+	$(MAKE) -f CMakeFiles/TEST.dir/build.make CMakeFiles/TEST.dir/webserver.cpp.o
 	$(MAKE) -f CMakeFiles/CONTROLLER.dir/build.make CMakeFiles/CONTROLLER.dir/webserver.cpp.o
 .PHONY : webserver.cpp.o
 
@@ -299,6 +309,7 @@ webserver.i: webserver.cpp.i
 
 # target to preprocess a source file
 webserver.cpp.i:
+	$(MAKE) -f CMakeFiles/TEST.dir/build.make CMakeFiles/TEST.dir/webserver.cpp.i
 	$(MAKE) -f CMakeFiles/CONTROLLER.dir/build.make CMakeFiles/CONTROLLER.dir/webserver.cpp.i
 .PHONY : webserver.cpp.i
 
@@ -308,6 +319,7 @@ webserver.s: webserver.cpp.s
 
 # target to generate assembly for a file
 webserver.cpp.s:
+	$(MAKE) -f CMakeFiles/TEST.dir/build.make CMakeFiles/TEST.dir/webserver.cpp.s
 	$(MAKE) -f CMakeFiles/CONTROLLER.dir/build.make CMakeFiles/CONTROLLER.dir/webserver.cpp.s
 .PHONY : webserver.cpp.s
 

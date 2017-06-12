@@ -81,17 +81,121 @@ CMakeFiles/TEST.dir/test.cpp.o.provides: CMakeFiles/TEST.dir/test.cpp.o.requires
 CMakeFiles/TEST.dir/test.cpp.o.provides.build: CMakeFiles/TEST.dir/test.cpp.o
 
 
+CMakeFiles/TEST.dir/csapp.c.o: CMakeFiles/TEST.dir/flags.make
+CMakeFiles/TEST.dir/csapp.c.o: ../csapp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/luman6666sinacom/Documents/Y86-Conc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/TEST.dir/csapp.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TEST.dir/csapp.c.o   -c /Users/luman6666sinacom/Documents/Y86-Conc/csapp.c
+
+CMakeFiles/TEST.dir/csapp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TEST.dir/csapp.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/luman6666sinacom/Documents/Y86-Conc/csapp.c > CMakeFiles/TEST.dir/csapp.c.i
+
+CMakeFiles/TEST.dir/csapp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TEST.dir/csapp.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/luman6666sinacom/Documents/Y86-Conc/csapp.c -o CMakeFiles/TEST.dir/csapp.c.s
+
+CMakeFiles/TEST.dir/csapp.c.o.requires:
+
+.PHONY : CMakeFiles/TEST.dir/csapp.c.o.requires
+
+CMakeFiles/TEST.dir/csapp.c.o.provides: CMakeFiles/TEST.dir/csapp.c.o.requires
+	$(MAKE) -f CMakeFiles/TEST.dir/build.make CMakeFiles/TEST.dir/csapp.c.o.provides.build
+.PHONY : CMakeFiles/TEST.dir/csapp.c.o.provides
+
+CMakeFiles/TEST.dir/csapp.c.o.provides.build: CMakeFiles/TEST.dir/csapp.c.o
+
+
+CMakeFiles/TEST.dir/PIPE/Pipe.cpp.o: CMakeFiles/TEST.dir/flags.make
+CMakeFiles/TEST.dir/PIPE/Pipe.cpp.o: ../PIPE/Pipe.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/luman6666sinacom/Documents/Y86-Conc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TEST.dir/PIPE/Pipe.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TEST.dir/PIPE/Pipe.cpp.o -c /Users/luman6666sinacom/Documents/Y86-Conc/PIPE/Pipe.cpp
+
+CMakeFiles/TEST.dir/PIPE/Pipe.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TEST.dir/PIPE/Pipe.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/luman6666sinacom/Documents/Y86-Conc/PIPE/Pipe.cpp > CMakeFiles/TEST.dir/PIPE/Pipe.cpp.i
+
+CMakeFiles/TEST.dir/PIPE/Pipe.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST.dir/PIPE/Pipe.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/luman6666sinacom/Documents/Y86-Conc/PIPE/Pipe.cpp -o CMakeFiles/TEST.dir/PIPE/Pipe.cpp.s
+
+CMakeFiles/TEST.dir/PIPE/Pipe.cpp.o.requires:
+
+.PHONY : CMakeFiles/TEST.dir/PIPE/Pipe.cpp.o.requires
+
+CMakeFiles/TEST.dir/PIPE/Pipe.cpp.o.provides: CMakeFiles/TEST.dir/PIPE/Pipe.cpp.o.requires
+	$(MAKE) -f CMakeFiles/TEST.dir/build.make CMakeFiles/TEST.dir/PIPE/Pipe.cpp.o.provides.build
+.PHONY : CMakeFiles/TEST.dir/PIPE/Pipe.cpp.o.provides
+
+CMakeFiles/TEST.dir/PIPE/Pipe.cpp.o.provides.build: CMakeFiles/TEST.dir/PIPE/Pipe.cpp.o
+
+
+CMakeFiles/TEST.dir/PIPE/Transfer.cpp.o: CMakeFiles/TEST.dir/flags.make
+CMakeFiles/TEST.dir/PIPE/Transfer.cpp.o: ../PIPE/Transfer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/luman6666sinacom/Documents/Y86-Conc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TEST.dir/PIPE/Transfer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TEST.dir/PIPE/Transfer.cpp.o -c /Users/luman6666sinacom/Documents/Y86-Conc/PIPE/Transfer.cpp
+
+CMakeFiles/TEST.dir/PIPE/Transfer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TEST.dir/PIPE/Transfer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/luman6666sinacom/Documents/Y86-Conc/PIPE/Transfer.cpp > CMakeFiles/TEST.dir/PIPE/Transfer.cpp.i
+
+CMakeFiles/TEST.dir/PIPE/Transfer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST.dir/PIPE/Transfer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/luman6666sinacom/Documents/Y86-Conc/PIPE/Transfer.cpp -o CMakeFiles/TEST.dir/PIPE/Transfer.cpp.s
+
+CMakeFiles/TEST.dir/PIPE/Transfer.cpp.o.requires:
+
+.PHONY : CMakeFiles/TEST.dir/PIPE/Transfer.cpp.o.requires
+
+CMakeFiles/TEST.dir/PIPE/Transfer.cpp.o.provides: CMakeFiles/TEST.dir/PIPE/Transfer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/TEST.dir/build.make CMakeFiles/TEST.dir/PIPE/Transfer.cpp.o.provides.build
+.PHONY : CMakeFiles/TEST.dir/PIPE/Transfer.cpp.o.provides
+
+CMakeFiles/TEST.dir/PIPE/Transfer.cpp.o.provides.build: CMakeFiles/TEST.dir/PIPE/Transfer.cpp.o
+
+
+CMakeFiles/TEST.dir/webserver.cpp.o: CMakeFiles/TEST.dir/flags.make
+CMakeFiles/TEST.dir/webserver.cpp.o: ../webserver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/luman6666sinacom/Documents/Y86-Conc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TEST.dir/webserver.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TEST.dir/webserver.cpp.o -c /Users/luman6666sinacom/Documents/Y86-Conc/webserver.cpp
+
+CMakeFiles/TEST.dir/webserver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TEST.dir/webserver.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/luman6666sinacom/Documents/Y86-Conc/webserver.cpp > CMakeFiles/TEST.dir/webserver.cpp.i
+
+CMakeFiles/TEST.dir/webserver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST.dir/webserver.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/luman6666sinacom/Documents/Y86-Conc/webserver.cpp -o CMakeFiles/TEST.dir/webserver.cpp.s
+
+CMakeFiles/TEST.dir/webserver.cpp.o.requires:
+
+.PHONY : CMakeFiles/TEST.dir/webserver.cpp.o.requires
+
+CMakeFiles/TEST.dir/webserver.cpp.o.provides: CMakeFiles/TEST.dir/webserver.cpp.o.requires
+	$(MAKE) -f CMakeFiles/TEST.dir/build.make CMakeFiles/TEST.dir/webserver.cpp.o.provides.build
+.PHONY : CMakeFiles/TEST.dir/webserver.cpp.o.provides
+
+CMakeFiles/TEST.dir/webserver.cpp.o.provides.build: CMakeFiles/TEST.dir/webserver.cpp.o
+
+
 # Object files for target TEST
 TEST_OBJECTS = \
-"CMakeFiles/TEST.dir/test.cpp.o"
+"CMakeFiles/TEST.dir/test.cpp.o" \
+"CMakeFiles/TEST.dir/csapp.c.o" \
+"CMakeFiles/TEST.dir/PIPE/Pipe.cpp.o" \
+"CMakeFiles/TEST.dir/PIPE/Transfer.cpp.o" \
+"CMakeFiles/TEST.dir/webserver.cpp.o"
 
 # External object files for target TEST
 TEST_EXTERNAL_OBJECTS =
 
 ../TEST: CMakeFiles/TEST.dir/test.cpp.o
+../TEST: CMakeFiles/TEST.dir/csapp.c.o
+../TEST: CMakeFiles/TEST.dir/PIPE/Pipe.cpp.o
+../TEST: CMakeFiles/TEST.dir/PIPE/Transfer.cpp.o
+../TEST: CMakeFiles/TEST.dir/webserver.cpp.o
 ../TEST: CMakeFiles/TEST.dir/build.make
 ../TEST: CMakeFiles/TEST.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/luman6666sinacom/Documents/Y86-Conc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../TEST"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/luman6666sinacom/Documents/Y86-Conc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ../TEST"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TEST.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -100,6 +204,10 @@ CMakeFiles/TEST.dir/build: ../TEST
 .PHONY : CMakeFiles/TEST.dir/build
 
 CMakeFiles/TEST.dir/requires: CMakeFiles/TEST.dir/test.cpp.o.requires
+CMakeFiles/TEST.dir/requires: CMakeFiles/TEST.dir/csapp.c.o.requires
+CMakeFiles/TEST.dir/requires: CMakeFiles/TEST.dir/PIPE/Pipe.cpp.o.requires
+CMakeFiles/TEST.dir/requires: CMakeFiles/TEST.dir/PIPE/Transfer.cpp.o.requires
+CMakeFiles/TEST.dir/requires: CMakeFiles/TEST.dir/webserver.cpp.o.requires
 
 .PHONY : CMakeFiles/TEST.dir/requires
 

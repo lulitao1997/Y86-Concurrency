@@ -1,16 +1,16 @@
 #include "pipe.h"
-PIPE_ PIPE[1110];
+PIPE_ PIPE[5110];
 
 int clock_cnt, ended;
 
-void pipe_init(const string &input) {
+void pipe_init(const string &input, int pos) {
 //    freopen(input.c_str(),"r",stdin);
     ifstream fin(input);
     int n = 0;
-    while (fin >> hex >> PIPE[0].Datamemory.Val[n])
+    while (fin >> hex >> PIPE[pos].Datamemory.Val[n])
         n++;
     clock_cnt = ended = 0;
-    PIPE[0].Init();
+    PIPE[pos].Init();
 }
 
 void proc_one() {

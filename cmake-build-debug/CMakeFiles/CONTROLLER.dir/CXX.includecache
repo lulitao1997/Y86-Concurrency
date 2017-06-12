@@ -35,6 +35,8 @@ cstdio
 -
 cstring
 -
+fstream
+-
 iostream
 -
 algorithm
@@ -79,6 +81,8 @@ PIPE/pipe.h
 /Users/luman6666sinacom/Documents/Y86-Conc/PIPE/pipe.h
 PIPE/transfer.h
 /Users/luman6666sinacom/Documents/Y86-Conc/PIPE/transfer.h
+proc_threads.h
+/Users/luman6666sinacom/Documents/Y86-Conc/proc_threads.h
 thread
 -
 mutex
@@ -142,6 +146,18 @@ map
 string
 -
 sstream
+-
+
+/Users/luman6666sinacom/Documents/Y86-Conc/proc_threads.h
+PIPE/pipe.h
+/Users/luman6666sinacom/Documents/Y86-Conc/PIPE/pipe.h
+PIPE/transfer.h
+/Users/luman6666sinacom/Documents/Y86-Conc/PIPE/transfer.h
+thread
+-
+iostream
+-
+mutex
 -
 
 /Users/luman6666sinacom/Documents/Y86-Conc/webserver.cpp

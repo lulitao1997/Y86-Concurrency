@@ -22,6 +22,7 @@ CMakeFiles/CONTROLLER.dir/controller.cpp.o: ../consts.h
 CMakeFiles/CONTROLLER.dir/controller.cpp.o: ../controller.cpp
 CMakeFiles/CONTROLLER.dir/controller.cpp.o: ../csapp.h
 CMakeFiles/CONTROLLER.dir/controller.cpp.o: ../map_io.h
+CMakeFiles/CONTROLLER.dir/controller.cpp.o: ../proc_threads.h
 CMakeFiles/CONTROLLER.dir/controller.cpp.o: ../webserver.h
 
 CMakeFiles/CONTROLLER.dir/webserver.cpp.o: ../csapp.h

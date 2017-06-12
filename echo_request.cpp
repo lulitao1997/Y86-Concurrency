@@ -8,21 +8,36 @@
 #include "map_io.h"
 #include "PIPE/pipe.h"
 #include "PIPE/transfer.h"
-#include "proc_threads.h"
+
 #include <thread>
 #include <mutex>
 #include <map>
 
 const int NTHREADS = 4;
 const int SBUFSIZE = 16;
+const int ECHONUM = 5;
 
 using namespace std;
 
 /* customized server routine */
 void webserver(int pt_n);
 /* Thread routine */
+void echoserver(int port_n);
+
+mutex mtx, f_lock, d_lock, e_lock, m_lock, w_lock, fin_lock;
+int fin_cnt = 0, start_cnt;
+
+map<string, string> var;
 
 //bool f_fin, d_fin, e_fin, m_fin, w_fin;
+
+PIPE_ *last_pipe_p;
+void before_wake_thread();
+void proc_f();
+void proc_d();
+void proc_e();
+void proc_m();
+void proc_w();
 
 int main(int argc, char **argv)
 {
@@ -40,10 +55,7 @@ int main(int argc, char **argv)
     }
 
     transfer(argv[1]);
-    pipe_init("__ins_buf__", 0);
-    pipe_init("__ins_buf__", 1000);
-    pipe_init("__ins_buf__", 2000);
-    pipe_init("__ins_buf__", 3000);
+    pipe_init("__ins_buf__");
     cerr << "write complete" << endl;
     f_lock.lock();
     d_lock.lock();
@@ -55,11 +67,11 @@ int main(int argc, char **argv)
 //    webserver(webserv_port);
 
 //    thread web_t(webserver, webserv_port);
-    thread f_t(proc_f);
-    thread d_t(proc_d);
-    thread e_t(proc_e);
-    thread m_t(proc_m);
-    thread w_t(proc_w);
+//    thread f_t(proc_f);
+//    thread d_t(proc_d);
+//    thread e_t(proc_e);
+//    thread m_t(proc_m);
+//    thread w_t(proc_w);
 //    web_t.join();
     webserver(webserv_port);
     f_t.join();
@@ -69,9 +81,19 @@ int main(int argc, char **argv)
     w_t.join();
 }
 
-int cnt4process[4] = {0, 1000, 2000, 3000};
-int pcnt;
-map<string, int> name2pid;
+void after_create() {
+    f_lock.lock();
+    d_lock.lock();
+    e_lock.lock();
+    m_lock.lock();
+    w_lock.lock();
+    fin_lock.lock();
+    thread f_t(proc_f);
+    thread d_t(proc_d);
+    thread e_t(proc_e);
+    thread m_t(proc_m);
+    thread w_t(proc_w);
+}
 
 void webserver(int pt_n) {
 
@@ -110,17 +132,11 @@ void webserver(int pt_n) {
         }
         sscanf(tmp_p, "%s %s %s", method, uri, version);
         cerr << "FUCK THERE" << endl;
-
-        if (!name2pid.count(hostname)) {
-            name2pid[hostname] = pcnt++;
-        }
-        clock_cnt = cnt4process[name2pid[hostname]];
         if (strcasecmp(method, "GET") == 0) {
             if (strcmp(uri, "/next") == 0) {
                 if (!ended) {
                     cerr << "receive POST!!" << endl;
                     before_wake_thread();
-                    cnt4process[name2pid[hostname]]++;
                     cerr << "begin to call proc threads" << endl;
                     f_lock.unlock(); /*this wake those echo threads*/
                     d_lock.unlock(); /*this wake those echo threads*/
@@ -134,10 +150,10 @@ void webserver(int pt_n) {
                 }
             }
             else if (strcmp(uri, "/prev") == 0) {
-                if (clock_cnt % 1000) cnt4process[name2pid[hostname]]--;
+                if (clock_cnt) clock_cnt--;
             }
             else if (strcmp(uri, "/reset") == 0) {
-                cnt4process[name2pid[hostname]] = 1000*name2pid[hostname];
+                clock_cnt = 0;
             }
             cout << "==== CLOCK COUNT ====" << clock_cnt << endl;
             PIPE[clock_cnt].Print(result);
@@ -149,5 +165,116 @@ void webserver(int pt_n) {
             doit(connfd, method, uri, version);
         }                                             //line:netp:tiny:doit
         Close(connfd);                                            //line:netp:tiny:close
+    }
+}
+//void proc_one() {
+//    clock_cnt++;
+//    PIPE[clock_cnt] = PIPE[clock_cnt - 1];
+//    PIPE[clock_cnt].Proc(PIPE[clock_cnt - 1]);
+//    PIPE[clock_cnt].Print();
+//    printf("\n");
+//    ended = (PIPE[clock_cnt].stat != SAOK);
+//}
+
+void before_wake_thread() {
+    cerr << "befor wake" << endl;
+    last_pipe_p = &PIPE[clock_cnt];
+    PIPE[++clock_cnt] = *last_pipe_p;
+    PIPE[clock_cnt].LHProc(*last_pipe_p);
+}
+
+void proc_f() {
+    while (1) {
+        f_lock.lock();
+        mtx.lock();
+        start_cnt++;
+        cerr << "PROCING F" << start_cnt << fin_cnt << endl;
+        mtx.unlock();
+
+
+        PIPE[clock_cnt].ConveyF(*last_pipe_p);
+
+        mtx.lock();
+        fin_cnt++;
+        cerr << "F FIN " << start_cnt << fin_cnt << endl;
+        if (fin_cnt == ECHONUM)
+            fin_lock.unlock(); //this wake the webserver thread.
+        mtx.unlock();
+    }
+}
+void proc_d() {
+    while (1) {
+        d_lock.lock();
+        mtx.lock();
+        start_cnt++;
+        cerr << "PROCING D" << start_cnt << fin_cnt << endl;
+        mtx.unlock();
+
+
+        PIPE[clock_cnt].ConveyD(*last_pipe_p);
+
+        mtx.lock();
+        fin_cnt++;
+        cerr << "D FIN " << start_cnt << fin_cnt << endl;
+        if (fin_cnt == ECHONUM)
+            fin_lock.unlock(); //this wake the webserver thread.
+        mtx.unlock();
+    }
+}
+void proc_e() {
+    while (1) {
+        e_lock.lock();
+        mtx.lock();
+        start_cnt++;
+        cerr << "PROCING E" << start_cnt << fin_cnt << endl;
+        mtx.unlock();
+
+
+        PIPE[clock_cnt].ConveyE(*last_pipe_p);
+
+        mtx.lock();
+        fin_cnt++;
+        cerr << "E FIN " << start_cnt << fin_cnt << endl;
+        if (fin_cnt == ECHONUM)
+            fin_lock.unlock(); //this wake the webserver thread.
+        mtx.unlock();
+    }
+}
+void proc_m() {
+    while (1) {
+        m_lock.lock();
+        mtx.lock();
+        start_cnt++;
+        cerr << "PROCING M" << start_cnt << fin_cnt << endl;
+        mtx.unlock();
+
+
+        PIPE[clock_cnt].ConveyM(*last_pipe_p);
+
+        mtx.lock();
+        fin_cnt++;
+        cerr << "M FIN " << start_cnt << fin_cnt << endl;
+        if (fin_cnt == ECHONUM)
+            fin_lock.unlock(); //this wake the webserver thread.
+        mtx.unlock();
+    }
+}
+void proc_w() {
+    while (1) {
+        w_lock.lock();
+        mtx.lock();
+        start_cnt++;
+        cerr << "PROCING W" << start_cnt << fin_cnt << endl;
+        mtx.unlock();
+
+
+        PIPE[clock_cnt].ConveyW(*last_pipe_p);
+
+        mtx.lock();
+        fin_cnt++;
+        cerr << "W FIN " << start_cnt << fin_cnt << endl;
+        if (fin_cnt == ECHONUM)
+            fin_lock.unlock(); //this wake the webserver thread.
+        mtx.unlock();
     }
 }

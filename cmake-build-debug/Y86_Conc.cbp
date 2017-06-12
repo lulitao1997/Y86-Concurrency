@@ -180,18 +180,22 @@
 			<Option target="PIPE"/>
 		</Unit>
 		<Unit filename="/Users/luman6666sinacom/Documents/Y86-Conc/PIPE/Pipe.cpp">
+			<Option target="TEST"/>
 			<Option target="CONTROLLER"/>
 			<Option target="PIPE"/>
 		</Unit>
 		<Unit filename="/Users/luman6666sinacom/Documents/Y86-Conc/PIPE/Pipe.h">
+			<Option target="TEST"/>
 			<Option target="CONTROLLER"/>
 			<Option target="PIPE"/>
 		</Unit>
 		<Unit filename="/Users/luman6666sinacom/Documents/Y86-Conc/PIPE/Transfer.cpp">
+			<Option target="TEST"/>
 			<Option target="CONTROLLER"/>
 			<Option target="PIPE"/>
 		</Unit>
 		<Unit filename="/Users/luman6666sinacom/Documents/Y86-Conc/PIPE/Transfer.h">
+			<Option target="TEST"/>
 			<Option target="CONTROLLER"/>
 			<Option target="PIPE"/>
 		</Unit>
@@ -214,18 +218,22 @@
 			<Option target="CONTROLLER"/>
 		</Unit>
 		<Unit filename="/Users/luman6666sinacom/Documents/Y86-Conc/csapp.c">
+			<Option target="TEST"/>
 			<Option target="CONTROLLER"/>
 		</Unit>
 		<Unit filename="/Users/luman6666sinacom/Documents/Y86-Conc/csapp.h">
+			<Option target="TEST"/>
 			<Option target="CONTROLLER"/>
 		</Unit>
 		<Unit filename="/Users/luman6666sinacom/Documents/Y86-Conc/test.cpp">
 			<Option target="TEST"/>
 		</Unit>
 		<Unit filename="/Users/luman6666sinacom/Documents/Y86-Conc/webserver.cpp">
+			<Option target="TEST"/>
 			<Option target="CONTROLLER"/>
 		</Unit>
 		<Unit filename="/Users/luman6666sinacom/Documents/Y86-Conc/webserver.h">
+			<Option target="TEST"/>
 			<Option target="CONTROLLER"/>
 		</Unit>
 		<Unit filename="/Users/luman6666sinacom/Documents/Y86-Conc/CMakeLists.txt">

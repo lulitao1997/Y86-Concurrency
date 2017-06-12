@@ -1,33 +1,14 @@
-//
-// Created by nn on 2017/6/8.
-//
-#include "csapp.h"
-#include <iostream>
-#include <string>
-using namespace std;
-
-map<string, int> Value;
-
-int main() {
-    int clientfd;
-    char *host, *port, buf[MAXLINE];
-    rio_t rio;
-
-    if (argc != 3) {
-        fprintf(stderr, "usage: %s <host> <port>\n", argv[0]);
-        exit(0);
+if (strcmp(uri, "/next") == 0) {
+    if (!ended) {
+        before_wake_thread();
+        f_lock.unlock();
+        d_lock.unlock();
+        e_lock.unlock();
+        m_lock.unlock(); /*this wake those echo threads*/
+        w_lock.unlock(); /*this wake those echo threads*/
+        cerr << "unlocked!" << endl;
+        fin_lock.lock(); /*wait echo threads to finish*/
+        cerr << "threads finished" << endl;
+        PIPE[clock_cnt].stat = PIPE[clock_cnt].W.stat;
     }
-    host = argv[1];
-    port = argv[2];
-
-    clientfd = Open_clientfd(host, port);
-    Rio_readinitb(&rio, clientfd);
-
-    while (Fgets(buf, MAXLINE, stdin) != NULL) {
-        Rio_writen(clientfd, buf, strlen(buf));
-        Rio_readlineb(&rio, buf, MAXLINE);
-        Fputs(buf, stdout);
-    }
-    Close(clientfd); //line:netp:echoclient:close
-    exit(0);
 }

@@ -30,7 +30,7 @@ struct W_ {
 		sprintf(buf, "%s\"valM\" : %d, ",buf ,valM);
 		sprintf(buf, "%s\"dstE\" : %d, ",buf ,dstE);
 		sprintf(buf, "%s\"dstM\" : %d ",buf ,dstM);
-		sprintf(buf, "%s}\n", buf);
+		sprintf(buf, "%s} ", buf);
 	}
 };
 
@@ -58,7 +58,7 @@ struct M_ {
 		sprintf(buf, "%s\"valA\" : %d, ",buf ,valA);
 		sprintf(buf, "%s\"dstE\" : %d, ",buf ,dstE);
 		sprintf(buf, "%s\"dstM\" : %d ",buf ,dstM);
-		sprintf(buf, "%s}\n", buf);
+		sprintf(buf, "%s} ", buf);
 	}
 };
 
@@ -91,7 +91,7 @@ struct E_ {
 		sprintf(buf, "%s\"dstM\" : %d, ", buf,dstM);
 		sprintf(buf, "%s\"srcA\" : %d, ", buf,srcA);
 		sprintf(buf, "%s\"srcB\" : %d ", buf,srcB);
-		sprintf(buf, "%s}\n", buf);
+		sprintf(buf, "%s} ", buf);
 	}
 };
 
@@ -131,7 +131,7 @@ struct D_ {
 		sprintf(buf, "%s\"rB\" : %d, ", buf,rB);
 		sprintf(buf, "%s\"valC\" : %d, ", buf,valC);
 		sprintf(buf, "%s\"valP\" : %d ", buf,valP);
-		sprintf(buf, "%s}\n", buf);
+		sprintf(buf, "%s} ", buf);
 	}	
 };
 
@@ -149,7 +149,7 @@ struct F_ {
 		sprintf(buf, "%s\"F\" : { ", buf);
 		sprintf(buf, "%s\"stall\" : %d, ", buf,stall);
 		sprintf(buf, "%s\"predPC\" : %d ", buf,predPC);
-		sprintf(buf, "%s}\n", buf);
+		sprintf(buf, "%s} ", buf);
 	}
 };
 
@@ -218,7 +218,7 @@ struct F_ { int predPC; };
 		D.Print(buf);
 		F.Print(buf);
 		RegisterFiles.Print(buf);
-        sprintf(buf, "%s\"stat\" : %d \n", buf, stat);
+        sprintf(buf, "%s\"stat\" : %d ", buf, stat);
 		sprintf(buf, "%s}\n", buf);
 	}
 
@@ -400,11 +400,11 @@ struct F_ { int predPC; };
 	}
 };
 
-extern PIPE_ PIPE[1110];
+extern PIPE_ PIPE[5110];
 
 extern int clock_cnt, ended;
 
-void pipe_init(const string &input);
+void pipe_init(const string &input, int pos);
 void proc_one();
 #endif //PIPE_H
 
