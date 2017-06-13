@@ -1,7 +1,0 @@
-/Users/luman6666sinacom/Documents/Y86-Conc/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/luman6666sinacom/Documents/Y86-Conc/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/luman6666sinacom/Documents/Y86-Conc/cmake-build-debug/CMakeFiles/TEST.dir
-/Users/luman6666sinacom/Documents/Y86-Conc/cmake-build-debug/CMakeFiles/CONTROLLER.dir
-/Users/luman6666sinacom/Documents/Y86-Conc/cmake-build-debug/PIPE/CMakeFiles/rebuild_cache.dir
-/Users/luman6666sinacom/Documents/Y86-Conc/cmake-build-debug/PIPE/CMakeFiles/edit_cache.dir
-/Users/luman6666sinacom/Documents/Y86-Conc/cmake-build-debug/PIPE/CMakeFiles/PIPE.dir
